@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.aamirislam.questiontemplate1.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Who was Washington&apos;s Vice President?"
+        android:id="@+id/textView"
+        android:layout_marginTop="59dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#050505" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A"
+        android:id="@+id/aButton"
+        android:layout_marginTop="37dp"
+        android:layout_marginLeft="49dp"
+        android:layout_marginStart="49dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B"
+        android:id="@+id/bButton"
+        android:layout_below="@+id/aButton"
+        android:layout_alignLeft="@+id/aButton"
+        android:layout_alignStart="@+id/aButton"
+        android:layout_alignRight="@+id/aButton"
+        android:layout_alignEnd="@+id/aButton" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C"
+        android:id="@+id/cButton"
+        android:layout_below="@+id/bButton"
+        android:layout_alignLeft="@+id/bButton"
+        android:layout_alignStart="@+id/bButton" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="D"
+        android:id="@+id/dButton"
+        android:layout_below="@+id/cButton"
+        android:layout_alignLeft="@+id/cButton"
+        android:layout_alignStart="@+id/cButton" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E"
+        android:id="@+id/eButton"
+        android:layout_below="@+id/dButton"
+        android:layout_toLeftOf="@+id/answerB"
+        android:layout_toStartOf="@+id/answerB" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="John Quincy Adams"
+        android:id="@+id/answerB"
+        android:layout_alignBaseline="@+id/bButton"
+        android:layout_alignBottom="@+id/bButton"
+        android:layout_toRightOf="@+id/aButton"
+        android:layout_toEndOf="@+id/aButton"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp"
+        android:textColor="#020202" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Thomas Jefferson"
+        android:id="@+id/answerE"
+        android:textColor="#030303"
+        android:layout_alignBaseline="@+id/eButton"
+        android:layout_alignBottom="@+id/eButton"
+        android:layout_alignLeft="@+id/answerB"
+        android:layout_alignStart="@+id/answerB" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="John Adams"
+        android:id="@+id/answerC"
+        android:textColor="#040404"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/answerB"
+        android:layout_alignStart="@+id/answerB" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Alexander Hamilton"
+        android:id="@+id/answerA"
+        android:textColor="#040404"
+        android:layout_alignBaseline="@+id/aButton"
+        android:layout_alignBottom="@+id/aButton"
+        android:layout_alignLeft="@+id/answerB"
+        android:layout_alignStart="@+id/answerB" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Benjamin Franklin"
+        android:id="@+id/answerD"
+        android:textColor="#060606"
+        android:layout_alignTop="@+id/dButton"
+        android:layout_alignLeft="@+id/answerC"
+        android:layout_alignStart="@+id/answerC" />
+
+</RelativeLayout>
